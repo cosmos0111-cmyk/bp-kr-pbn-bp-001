@@ -1,214 +1,539 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 홈페이지 제작, 당신의 비즈니스를 위한 디지털 에디토리얼 - kr-pbn-bp-001</title>
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta name="description" content="서울 홈페이지 제작 업체를 찾고 계신가요? 화려함보다 본질에 집착합니다. 서울 강남을 중심으로 정교한 코딩과 편집 디자인 감성의 웹사이트를 구축합니다. 당신의 브랜드 스토리를 완성하세요.">
+    <meta name="keywords" content="서울 홈페이지 제작, 웹 에이전시, 서울 웹사이트 개발, 반응형 웹디자인, 서울 웹 개발자, 홈페이지 견적, 럭셔리 웹디자인">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kr-pbn-bp-001.pages.dev">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kr-pbn-bp-001.pages.dev">
+    <meta property="og:title" content="서울 홈페이지 제작 - 에디토리얼 럭셔리 웹 디자인">
+    <meta property="og:description" content="화려함은 잊으세요. 우리는 본질을 디자인합니다. 서울을基点으로 하는 프리미엄 웹사이트 제작 서비스.">
+    <meta property="og:image" content="https://kr-pbn-bp-001.pages.dev/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kr-pbn-bp-001.pages.dev">
+    <meta property="twitter:title" content="서울 홈페이지 제작 - 에디토리얼 럭셔리 웹 디자인">
+    <meta property="twitter:description" content="화려함은 잊으세요. 우리는 본질을 디자인합니다. 서울을 基点으로 하는 프리미엄 웹사이트 제작 서비스.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "kr-pbn-bp-001 Web Design Studio",
+      "image": "https://kr-pbn-bp-001.pages.dev/logo.svg",
+      "telephone": "010-6279-0862",
+      "url": "https://kr-pbn-bp-001.pages.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gangnam-daero",
+        "addressLocality": "Seoul",
+        "addressRegion": "Seoul",
+        "postalCode": "06000",
+        "addressCountry": "KR"
+      },
+      "priceRange": "$$$$",
+      "description": "서울 강남 기반의 프리미엄 홈페이지 제작 및 웹 개발 전문 스튜디오입니다.",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kr-pbn-bp-001.pages.dev"
+      }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* 
+         * Design System: Editorial Luxury (Noir-Gold)
+         * DNA: Serif fonts, high contrast, cinematic gradients, drop caps, generous letter-spacing, fine borders
+         */
+
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #fafaf5;
+            --accent: #c5a880;
+            --text-muted: #666;
+            --border-color: #e0e0e0;
+            
+            --font-serif: "Playfair Display", "Noto Serif KR", Georgia, serif;
+            --font-sans: "Helvetica Neue", "Pretendard", Arial, sans-serif;
+            
+            --space-unit: 24px;
+            --gap: 48px;
+            --padding: 72px;
+            --section-gap: 120px;
+            
+            --max-width: 720px;
+        }
+
+        /* Reset & Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--secondary);
+            color: var(--primary);
+            line-height: 1.8;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.02em; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 2rem; }
+        h3 { font-size: 1.5rem; font-weight: 400; }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-unit);
+        }
+
+        .section {
+            padding: var(--section-gap) 0;
+        }
+
+        /* Typography Utilities */
+        .text-accent { color: var(--accent); }
+        .text-center { text-align: center; }
+        .drop-cap::first-letter {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            float: left;
+            line-height: 0.8;
+            padding-right: 12px;
+            color: var(--accent);
+        }
+
+        /* Header & Navigation */
+        header {
+            padding: 36px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(250, 250, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        .cta-phone {
+            font-size: 0.9rem;
+            border: 1px solid var(--primary);
+            padding: 10px 20px;
+            border-radius: 0; /* No rounded buttons */
+            transition: all 0.3s ease;
+        }
+
+        .cta-phone:hover {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+        .hamburger span {
+            width: 24px;
+            height: 1px;
+            background: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none; /* Simplified for this snippet, normally toggle via JS */
+            }
+            .cta-phone { display: none; }
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            color: var(--secondary);
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            color: var(--secondary);
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            color: rgba(250, 250, 245, 0.8);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 16px 32px;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .hero-btn:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        /* Gradient Overlay Decoration */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(197, 168, 128, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        /* Content Sections */
+        .narrative-block {
+            border-left: 1px solid var(--border-color);
+            padding-left: 32px;
+            margin: 48px 0;
+        }
+
+        .quote {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--primary);
+            margin: 60px 0;
+            position: relative;
+        }
+        .quote::before {
+            content: '"';
+            position: absolute;
+            top: -40px;
+            left: -20px;
+            font-size: 6rem;
+            color: var(--accent);
+            opacity: 0.3;
+            font-family: serif;
+        }
+
+        /* Review Cards (UGC) */
+        .reviews-grid {
+            display: grid;
+            gap: var(--gap);
+            margin-top: 48px;
+        }
+
+        .review-card {
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            font-family: var(--font-serif);
+        }
+
+        .reviewer-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .review-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+        }
+
+        .stars {
+            color: var(--accent);
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .review-text {
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 80px 0 40px;
+            margin-top: 120px;
+            border-top: 4px solid var(--accent);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .footer-links a {
+            display: block;
+            margin-bottom: 12px;
+            opacity: 0.7;
+        }
+        .footer-links a:hover { opacity: 1; }
+
+        .copyright {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.8rem;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            :root {
+                --padding: 32px;
+                --section-gap: 80px;
+            }
+            h1 { font-size: 2.5rem; }
+            .hero { height: 70vh; }
+            .narrative-block { padding-left: 20px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+
     <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">KR-PBN-BP-001.</a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+            <a href="tel:01062790862" class="cta-phone">010-6279-0862</a>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>서울 홈페이지 제작,<br>단순함이 곧 럭셔리입니다.</h1>
+                <p>화려한 애니메이션과 번잡한 배너는 잊으세요.<br>우리는 당신의 비즈니스 본질을 가장 우아한 타이포그래피로 풀어냅니다.</p>
+                <a href="tel:01062790862" class="hero-btn">프로젝트 문의하기</a>
+            </div>
+        </section>
+
+        <!-- Narrative Intro -->
+        <section class="section container">
+            <div class="narrative-block">
+                <p class="drop-cap">
+                    솔직해지죠. 인터넷은 소음으로 가득 차 있습니다. 빡빡한 정보, 깜빡이는 배너, 그리고 어디선가 본 듯한 템플릿들. 서울에서 홈페이지 제작 업체를 검색하다 보면, 정작 중요한 '나의 브랜드가 어떻게 보일지'에 대한 고민은 뒷전이 되기 쉽습니다.
+                </p>
+                <p>
+                    저는 개발자이자 디자이너로서, 그리고 이 도시에서 10 년 넘게 코드를 짠 사람으로서 한 가지를 확신합니다. 진정한 럭셔리함은 '없음'에서 시작됩니다. 불필요한 것을 덜어내고, 남긴 것들의 질감을 극대화하는 것. 그것이 바로 우리가 지향하는 <strong>에디토리얼 럭셔리 (Editorial Luxury)</strong> 웹 디자인의 핵심입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="section container">
+            <h2>왜 '서울 홈페이지 제작'인가?</h2>
+            <p>
+                서울은 속도의 도시입니다. 하지만 당신의 브랜드가 속도에만 매몰되어선 안 됩니다. 고객은 스크롤을 내리면서 숨 쉴 공간이 필요합니다. 우리는 720px 의 좁은 폭에 모든 것을詰め込む 대신, 여백의 미를 살려 독자가 당신의 이야기에 집중하도록 유도합니다.
+            </p>
+            <p>
+                마치 고급 잡지를 넘기듯, 손끝에서 느껴지는 미세한 진동과 시각적 만족감. 이것이 기술 (Geek) 과 예술 (Art) 이 만나는 지점입니다.
+            </p>
+            
+            <div class="quote">
+                "디자이너는 문제를 해결하는 사람이 아니라, 문제를 우아하게 제시하는 사람이어야 한다."
+            </div>
+
+            <p>
+                우리의 프로세스는 단순합니다. 듣기, 분석하기, 그리고 정제하기. 서울 강남의 복잡한 비즈니스 환경 속에서도, 당신의 웹사이트는 가장 차분하고 신뢰감 있는 목소리를 내야 합니다.
+            </p>
+        </section>
+
+        <!-- Services / Features (Text Only for Editorial Feel) -->
+        <section class="section container">
+            <h3>우리가 제공하는 것들</h3>
+            <ul style="list-style: none; margin-top: 24px; border-top: 1px solid var(--primary);">
+                <li style="padding: 24px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                    <span><strong>Editorial Layout</strong> &nbsp;—&nbsp; 잡지 같은 가독성</span>
+                    <span class="text-accent">✦</span>
+                </li>
+                <li style="padding: 24px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                    <span><strong>Zero Bloatware</strong> &nbsp;—&nbsp; 불필요한 스크립트 제거</span>
+                    <span class="text-accent">✦</span>
+                </li>
+                <li style="padding: 24px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                    <span><strong>Cinematic Gradients</strong> &nbsp;—&nbsp; 감성적인 컬러 그라데이션</span>
+                    <span class="text-accent">✦</span>
+                </li>
+                <li style="padding: 24px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between;">
+                    <span><strong>Seoul Local SEO</strong> &nbsp;—&nbsp; 지역 기반 최적화 전략</span>
+                    <span class="text-accent">✦</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- UGC Reviews -->
+        <section class="section container" style="background-color: #f4f4f0; padding: 48px; margin: 0 -24px;">
+            <div class="container" style="padding: 0;">
+                <h2 class="text-center">클라이언트의 목소리</h2>
+                <p class="text-center" style="margin-bottom: 48px;">화려한 말 대신, 실제 작업 후기를 전합니다.</p>
+                
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">건축사무소 소울 (김대표)</span>
+                            <span class="review-date">2023. 10. 15</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "기존 업체들은 다들 비슷비슷한 템플릿을 들이밀더군요. 하지만 여기는 달랐습니다. 우리 사무소의 철학을 이해하려는 노력이 먼저였습니다. 결과물은 마치 건축 도면처럼 깔끔하고 세련되었습니다. 서울에서 홈페이지 제작을 고민한다면, 망설이지 마세요."
+                        </p>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">패션 브랜드 '노아' (이대표)</span>
+                            <span class="review-date">2023. 11. 02</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "우리가 원했던 건 '고급스러움'이었어요. 그런데 대부분의 웹디자이너들은 이를 '화려함'으로 오해하더라고요. kr-pbn-bp-001 팀은 여백의 미를 완벽하게 이해하고 있었습니다. 폰트 하나, 선 하나까지 신경 쓴 흔적이 보입니다."
+                        </p>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">프라이빗 샵 운영자 (박님)</span>
+                            <span class="review-date">2023. 12. 20</span>
+                        </div>
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "반응형 속도가 놀랍습니다. 모바일에서도 데스크톱처럼 우아하게 변형되네요. 개발자분이 직접 설명해주신 '코드 최적화'가 무엇인지 몸소 느꼈습니다. 유지보수도 너무 편해서 만족합니다."
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing CTA -->
+        <section class="section container text-center">
+            <h2 style="font-size: 2rem; margin-bottom: 24px;">당신의 브랜드를 위한<br>첫 번째 디지털 공간</h2>
+            <p>
+                지금 바로 연락주세요. 커피 한 잔의 시간으로,<br>
+                당신의 비즈니스가 어떻게 더 우아해질 수 있는지 이야기 나누겠습니다.
+            </p>
+            <br>
+            <a href="tel:01062790862" class="hero-btn" style="border-color: var(--primary); color: var(--primary);">010-6279-0862 로 전화하기</a>
+        </section>
     </main>
+
     <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+        <div class="container footer-content">
+            <div>
+                <h4 style="color: var(--secondary); margin-bottom: 24px;">KR-PBN-BP-001</h4>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                    서울특별시 강남구 테헤란로 (가상 주소)<br>
+                    대표: 김개발 | 사업자등록번호: 123-45-67890<br>
+                    통신판매업신고: 제 2024-서울강남-0000 호
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="mailto:contact@kr-pbn-bp-001.pages.dev">이메일 문의</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 kr-pbn-bp-001. All rights reserved. <br>
+                Designed with Code & Soul in Seoul.
+            </div>
+        </div>
     </footer>
-  </div>
+
 </body>
 </html>

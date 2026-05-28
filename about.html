@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 홈페이지 제작 업체 정보 | 서울 웹사이트 개발</title>
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <meta name="description" content="서울 홈페이지 제작 업체의 상세 정보를 소개합니다. 강남을 기반으로 한 웹 개발팀의 이야기, 기술 스택, 그리고 우리가 생각하는 '좋은 웹사이트'에 대한 철학을 만나보세요.">
+    <meta name="keywords" content="서울 홈페이지 제작 업체, 서울 웹사이트 개발자, 웹 개발 사무실 위치, 홈페이지 견적 문의, 서울 웹 에이전시">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kr-pbn-bp-001.pages.dev/info">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="서울 홈페이지 제작 업체 정보 | 서울 웹사이트 개발">
+    <meta property="og:description" content="서울 강남, 코딩의 본질을 파헤치는 개발자들의 공간.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/1a1a1a/d4af37">
+    <style>
+        /*
+         * Design System: Editorial Luxury (Noir-Gold)
+         * DNA: Serif fonts, high contrast, cinematic gradients, drop caps, generous letter-spacing, fine borders
+         */
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #141414;
+            --color-text-primary: #f4f4f4;
+            --color-text-secondary: #a0a0a0;
+            --color-accent: #d4af37;
+            --color-accent-dim: #8a701e;
+            --font-serif: 'Times New Roman', Times, serif;
+            --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --spacing-unit: 1.5rem;
+            --border-thin: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.8;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-serif);
+            font-weight: 400;
+            color: var(--color-text-primary);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.1; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); border-bottom: var(--border-thin); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--color-accent); }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--color-text-secondary); }
+        
+        .highlight { color: var(--color-accent); font-style: italic; }
+        
+        /* Layout Components */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Navigation */
+        header {
+            padding: 2rem 0;
+            border-bottom: var(--border-thin);
+            background: var(--color-bg-primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: var(--color-accent); }
+        .hamburger { display: none; background: none; border: none; cursor: pointer; }
+        .hamburger span {
+            display: block; width: 25px; height: 2px; background: var(--color-accent); margin: 6px 0;
+        }
+
+        /* Sections */
+        section { padding: 5rem 0; }
+        
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+        }
+        .hero p.lead {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            color: var(--color-text-primary);
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        .card {
+            background: var(--color-bg-secondary);
+            padding: 2rem;
+            border: var(--border-thin);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--color-accent); }
+
+        /* Info List */
+        .info-list { list-style: none; }
+        .info-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-list li span.label { color: var(--color-accent); font-family: var(--font-serif); }
+
+        /* Footer */
+        footer {
+            background: var(--color-bg-secondary);
+            padding: 4rem 0;
+            border-top: var(--border-thin);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+        footer a { color: var(--color-accent); text-decoration: none; }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr 1fr; }
+            .hamburger { display: none; }
+        }
+        @media (max-width: 767px) {
+            .nav-links { display: none; } /* Simplified mobile nav for this snippet */
+            .hamburger { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">SEOUL_WEB_DEV</a>
+            <nav>
+                <button class="hamburger" aria-label="메뉴 열기">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="#">홈</a>
+                    <a href="#">포트폴리오</a>
+                    <a href="#" style="color:var(--color-accent);">정보</a>
+                    <a href="#">문의</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>우리는<br><span class="highlight">코드를 쓰는 에디터</span>입니다.</h1>
+                <p class="lead">
+                    서울 강남 한복판, 화려한 네온사인이 아닌 모니터의 커서만 켜두고 밤을 새우는 곳.<br>
+                    서울 홈페이지 제작 업체로서의 정체성은 '기술' 그 이상입니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-2">
+                <div>
+                    <h2>01. Who We Are</h2>
+                    <p>
+                        안녕하세요. 서울 홈페이지 제작을 넘어, 브랜드의 디지털 페르소나를 구축하는 팀입니다.
+                        우리는 자신을 '개발자'라 부르기보다 '디지털 아키텍트'라고 부르고 싶습니다.
+                    </p>
+                    <p>
+                        대부분의 서울 웹사이트 개발 업체가 템플릿을 복사해 붙여넣는 동안, 우리는 0 에서 1 을 만드는 고통을 즐깁니다. 
+                        "이 버튼은 왜 여기에 있어야 할까?", "이 애니메이션이 사용자의 감정을 어떻게 건드릴까?"
+                        사소한 질문들이 모여 <span class="highlight">럭셔리한 사용자 경험</span>이 됩니다.
+                    </p>
+                    <p>
+                        저희는 코딩의 본질에 집착합니다. 불필요한 플러그인은 과감히 버리고, 
+                        순수한 HTML5 와 CSS3, 그리고 최적화된 JavaScript 로만 승부합니다.
+                        이것이 우리가 생각하는 진정한 서울 웹 개발자의 모습입니다.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Tech Stack</h3>
+                    <p style="margin-bottom: 2rem; font-size: 0.9rem;">우리가 사랑하는 도구들입니다. 유행을 따르지 않고, 가장 견고한 것을 선택합니다.</p>
+                    <ul class="info-list">
+                        <li><span class="label">Frontend</span> <span>React, Next.js, GSAP</span></li>
+                        <li><span class="label">Backend</span> <span>Node.js, Python, AWS</span></li>
+                        <li><span class="label">Design</span> <span>Figma, Adobe CC</span></li>
+                        <li><span class="label">Philosophy</span> <span>Clean Code, Semantic HTML</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: var(--color-bg-secondary);">
+            <div class="container">
+                <h2>02. Location & Contact</h2>
+                <div class="grid-2">
+                    <div>
+                        <p>
+                            <strong>서울특별시 강남구 테헤란로 123</strong><br>
+                            (강남역 5 번 출구 도보 3 분)<br><br>
+                            저희 사무실은 소음이 차단된 조용한 공간입니다. 
+                            복잡한 미팅보다는 깊은 몰입을 위한 환경이죠.
+                            서울 홈페이지 견적이 필요하시다면, 언제든 찾아오세요. 
+                            커피 한 잔의 여유와 함께 당신의 프로젝트를 논의할 수 있습니다.
+                        </p>
+                        <p style="margin-top: 2rem;">
+                            <a href="tel:02-1234-5678" style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-accent); text-decoration: none; border-bottom: 1px solid var(--color-accent);">
+                                02-1234-5678
+                            </a>
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center;">
+                        <div style="background: #222; height: 300px; display: flex; align-items: center; justify-content: center; border: var(--border-thin);">
+                            <span style="color: var(--color-text-secondary); font-family: var(--font-serif);">[Map Placeholder: Gangnam Station]</span>
+                        </div>
+                        <p style="font-size: 0.8rem; margin-top: 1rem; text-align: right;">
+                            * 방문 전 사전 예약을 권장합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>03. FAQ: 서울 홈페이지 제작에 관하여</h2>
+            <p>자주 묻는 질문들에 대해 솔직하게 답변합니다.</p>
+            
+            <div style="margin-top: 3rem;">
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Q. 서울 홈페이지 제작 비용은 얼마나 되나요?</h3>
+                    <p>
+                        "얼마인가요?"는 가장 어렵지만 중요한 질문이죠. 
+                        마치 "집 지을 때 얼마 드나요?"라고 묻는 것과 비슷합니다. 
+                        단순한 정보성 사이트부터 복잡한 이커머스까지 범위가 넓기 때문입니다. 
+                        하지만 분명한 건, 저희는 <span class="highlight">저가형 템플릿 공장을 운영하지 않는다</span>는 점입니다. 
+                        견적은 프로젝트의 규모와 요구되는 기능에 따라 상이하며, 
+                        첫 상담 후 투명하게 산출하여 제시합니다.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Q. 반응형 웹디자인이 필수인가요?</h3>
+                    <p>
+                        2024 년 서울에서 반응형은 선택이 아닌 필수입니다. 
+                        모바일 트래픽이 데스크탑을 압도하는 지금, 
+                        스마트폰에서도 완벽하게 작동하지 않는 웹사이트는 존재 의미가 퇴색합니다. 
+                        저희가 만드는 모든 서울 웹사이트는 모바일, 태블릿, 데스크탑을 막론하고 
+                        완벽한 편집 디자인 감성을 유지하도록 설계됩니다.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Q. 유지보수는 어떻게 하나요?</h3>
+                    <p>
+                        웹사이트는 런칭이 끝이 아니라 시작입니다. 
+                        보안 패치, 콘텐츠 업데이트, 서버 모니터링까지. 
+                        저희는 개발完成后에도 파트너로서 곁에 머물며 
+                        당신의 브랜드가 디지털 세상에서 건강하게 자라나도록 돕습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p style="font-family: var(--font-serif); font-size: 1.2rem; color: var(--color-text-primary); margin-bottom: 1rem;">
+                SEOUL WEB DEVELOPMENT STUDIO
+            </p>
+            <p>
+                &copy; 2024 Seoul Homepage Production Agency. All rights reserved.<br>
+                대표: 김철수 | 사업자등록번호: 123-45-67890 | 통신판매업신고: 제 2024-서울강남-0000 호
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">
+                Designed & Coded with <span style="color: var(--color-accent);">♥</span> in Gangnam, Seoul.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
