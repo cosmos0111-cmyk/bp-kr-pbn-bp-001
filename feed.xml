@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[홈페이지 제작]]></title>
-  <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001</link>
-  <description><![CDATA[홈페이지 제작 - 서울 홈페이지 제작 업체 관련 최신 소식 및 가이드]]></description>
-  <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 06:47:40 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 06:47:40 GMT</lastBuildDate>
-  <atom:link href="https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[서울 서울 홈페이지 제작 업체]]></title>
+  <link>https://</link>
+  <description><![CDATA[서울 홈페이지 제작 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+  <language>ko-KR</language>
+  <pubDate>Mon, 15 Jun 2026 23:22:20 GMT</pubDate>
+  <lastBuildDate>Mon, 15 Jun 2026 23:22:20 GMT</lastBuildDate>
+  <atom:link href="https:///feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[서울 홈페이지 제작 업체 선택 전에 확인할 체크리스트와 실패 사례]]></title>
-      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-1bchs1q.html</link>
-      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-1bchs1q.html</guid>
-      <description><![CDATA[### Cherry MX 스위치의 독일 공장과 중국 공장 생산분의 미세한 작동음 차이와 로트 식별법 아, 진짜... Cherry MX 스위치의 독일 공장에서 제조된 제품과 중국 공장에서 제조된 제품 간에 미세하지만 중요한 작동음 차이를 발견하였습니다. 이 소음을 통해 ]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[창작한 제목]]></title>
-      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/guide-001-hjsb5n.html</link>
-      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/guide-001-hjsb5n.html</guid>
-      <description><![CDATA[### 포스트 DNA 4023f91e #### "특정 IPS 패널 로트에서만 발생하는 백라이트 블리드 패턴 해결 가이드" 아, 진짜... 특정 메인보드 바이오스 버전에서만 가능한 비공식 전압 언락 방법과 벽돌 위험 갈등에 대해 이야기해볼게. 이 주제는 오버클럭 커뮤니티]]></description>
-      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[서울 홈페이지 제작 업체에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
-      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-1bchs1q.html</link>
-      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-1bchs1q.html</guid>
-      <description><![CDATA[제목: 창작한 제목: "CPU 크레딧 소진 전 커널 패닉의 비밀: AWS Lightsail 인스턴스 관리의 고래" ## 구조 ### cold-open-case클라우드 엣지케이스로 시작하여, 서버 리소스 관리에 대한 간단한 실수부터 시작한다. ## 주제 분석 ### 구체]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <title><![CDATA[서울 서울 홈페이지 제작 업체 - 공식 홈페이지 오픈 안내]]></title>
+      <link>https:///</link>
+      <guid isPermaLink="true">https:///</guid>
+      <description><![CDATA[서울 홈페이지 제작 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+      <pubDate>Mon, 15 Jun 2026 23:22:20 GMT</pubDate>
     </item>
 </channel>
 </rss>
