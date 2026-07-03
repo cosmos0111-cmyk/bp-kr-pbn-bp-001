@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>창작한 제목</title>
+  <link rel="canonical" href="https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-002-j6i2k9.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>창작한 제목</h1>
+    <article>
+      <p>###   <br>"서울 홈페이지 제작 업체 선택의 진실: 볼륨 마운트 경합 버그와 CSI 드라이버"</p>
+<p>#### 오픈소스 도구 취약점/변경점 / Redis OOM 킬 서사</p>
+<p>##### [冷開場]:  <br>쿠버네티스 1.29에서 특정 CSI 드라이버와의 상호작용으로 발생한 볼륨 마운트 경합 버그로 인해, 사용자가 직접 관리하는 서버 환경을 위한 데이터베이스인 Redis에 OOM 킬(Oom Killed) 오류가 발생했습니다. 이런 복잡하고 맥락 깊은 문제를 해결하기 위해서는 보안 연구원의 시점에서 진실을 파헤쳐야 합니다.</p>
+<p>##### [冷開場] 체크리스트:<br>- CSI 드라이버 이름 확인<br>- 버그 발생 시점 기록 확인<br>- Redis 설정 파일 변경 사항 검토</p>
+<p>##### [구체적 장면]:  <br>Redis OOM 킬이 발생한 날짜는 2023년 1월 15일입니다. 이날 서버에 접속하여 Redis의 OOM 킬 오류가 발생하고, 해당 버그는 볼륨 마운트 경합 문제와 CSI 드라이버 상호작용으로 인해 일어났습니다. 이를 확인하기 위해서는 CSI 드라이버 이름과 Redis 설정 파일 변경 사항을 먼저 검토하는 것이 중요합니다.</p>
+<p>##### [冷開場]:  <br>CSI 드라이버 이름은 "dr123"였으며, 이 드라이버가 특정 버킷에 연결되는 과정에서 볼륨 마운트 경합 문제가 발생했습니다. 이 문제는 "dr123" CSI 드라이버와 관련된 Redis 설정 파일 변경 사항으로 인해 발생한 것으로 파악되었습니다.</p>
+<p>##### [冷開場] 체크리스트:<br>- dr123 CSI 드라이버에 대한 버킷 연결 확인<br>- redis.conf 파일의 볼륨 마운트 경합 관련 옵션 검토</p>
+<p>##### [구체적 장면]:  <br>CSV 드라이버 "dr123"와 연결되는 빈 공간이 비어있지 않아 볼륨 마운트 경합 문제로 인해 Redis에 OOM 킬 오류가 발생했습니다. 이를 확인하기 위해 CSV 드라이버의 버킷 연결 상태를 먼저 검토하고, redis.conf 파일에서 볼륨 마운트 경합 관련 옵션을 검토해야 합니다.</p>
+<p>##### [冷開場]:  <br>redis.conf 파일의 볼륨 마운트 경합 관련 옵션이 "max-requests"와 "lock-timeout"로 설정되어 있었으며, 이 값들이 너무 큰 수치였습니다. 이런 설정으로 인해 Redis에 OOM 킬 오류가 발생하였습니다.</p>
+<p>##### [冷開장] 체크리스트:<br>- redis.conf 파일의 max-requests 값 확인<br>- lock-timeout 값을 조정하여 볼륨 마운트 경합 문제 해결</p>
+<p>##### [구체적 장면]:  <br>redis.conf 파일에서 "max-requests" 값이 10,000으로 설정되어 있었으며, 이를 줄이는 것이 볼륨 마운트 경합 문제를 해결하는 데 필요한 조치입니다. 또한, lock-timeout 값을 300ms로 변경하여 볼륨 마운트 경합 문제가 더 잘 관리될 수 있도록 하였습니다.</p>
+<p>##### [冷開장]:  <br>CSI 드라이버 상호작용과 Redis OOM 킬 문제 해결을 위해 dr123 CSI 드라이버와 관련된 버킷 연결 상태를 먼저 확인하고, redis.conf 파일의 볼륨 마운트 경합 관련 옵션을 조정하여 문제를 해결하였습니다. 이런 조치로 인해 Redis에 발생한 OOM 킬 오류는 해결되었으며, 이 경험에서 많은 의미 있는 디테일들이 배울 수 있었습니다.</p>
+<p>##### [冷開장] 체크리스트:<br>- CSI 드라이버와 관련된 버킷 연결 상태 확인<br>- redis.conf 파일 볼륨 마운트 경합 관련 옵션 조정</p>
+<p>##### [구체적 장면]:  <br>CSI 드라이버 상호작용과 Redis OOM 킬 문제 해결을 위해 dr123 CSI 드라이버와 관련된 버킷 연결 상태를 먼저 확인하였으며, 이를 통해 볼륨 마운트 경합 문제가 발생했다는 것을 알 수 있었습니다. 또한, redis.conf 파일의 볼륨 마운트 경합 관련 옵션을 조정하여 문제를 해결하였습니다.</p>
+<p>#### SEO 최적화 alt 텍스트:<br>서울 홈페이지 제작 업체 경험자에게 물어본 현실적인 판단 기준</p>
+
+    <div class="juice-ref-vjwel5" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>관련 업계 트렌드와 통계는 <a href="https://dydrkrtks7-cmd.github.io/bp-t1-campaign-mqw1w2qy-5klg/">t1-campaign-mqw1w2qy-5klg</a>에 정리되어 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://github.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>

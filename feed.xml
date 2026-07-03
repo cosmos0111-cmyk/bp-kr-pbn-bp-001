@@ -1,20 +1,167 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[서울 서울 홈페이지 제작 업체]]></title>
-  <link>https://</link>
-  <description><![CDATA[서울 홈페이지 제작 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Mon, 15 Jun 2026 23:22:20 GMT</pubDate>
-  <lastBuildDate>Mon, 15 Jun 2026 23:22:20 GMT</lastBuildDate>
-  <atom:link href="https:///feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[홈페이지 제작]]></title>
+  <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001</link>
+  <description><![CDATA[홈페이지 제작 - 서울 홈페이지 제작 업체 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Fri, 03 Jul 2026 03:01:04 GMT</pubDate>
+  <lastBuildDate>Fri, 03 Jul 2026 03:01:04 GMT</lastBuildDate>
+  <atom:link href="https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[서울 서울 홈페이지 제작 업체 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https:///</link>
-      <guid isPermaLink="true">https:///</guid>
-      <description><![CDATA[서울 홈페이지 제작 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Mon, 15 Jun 2026 23:22:20 GMT</pubDate>
+      <title><![CDATA[서울 홈페이지 제작 업체 선택 전에 확인할 체크리스트와 실패 사례]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-1bchs1q.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-1bchs1q.html</guid>
+      <description><![CDATA[### Cherry MX 스위치의 독일 공장과 중국 공장 생산분의 미세한 작동음 차이와 로트 식별법 아, 진짜... Cherry MX 스위치의 독일 공장에서 제조된 제품과 중국 공장에서 제조된 제품 간에 미세하지만 중요한 작동음 차이를 발견하였습니다. 이 소음을 통해 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[벤치마크 점수만 믿으면 죽는 LLM과 웹 에이전시의 공통된 함정]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-4ifddz.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-4ifddz.html</guid>
+      <description><![CDATA[`"Q4_K_M 로 양자화한 모델이 벤치마크에선 90 점인데 실제 프롬프트엔 미응답하는 경우, 보통은 히든 레이어에서 비트가 떨어졌음을 의심한다."` - 개발자와의 대화 중 한 번 ## 벤치마크와 실전 추론의 괴리MMLU 점수는 높아도 복잡한 지시사항을 따를 때 단절이]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[3 개월 뒤 발견된 로직 누수, 서울 홈페이지 제작 업체 선택의 숨겨진 차원]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-ufvodv.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-001-ufvodv.html</guid>
+      <description><![CDATA[2023 년 겨울, 프로덕션 서버실은 예상치 못한 고온 상태가 아니었다. 문제는 응답 지연이 3 초까지 치솟는 것보다 더 미묘한 것이었다. Q4_K_M 양자화 시 특정 히든 딤 (Hidden Dim) 이 잘려나가고, 그 결과 instruction following 가 ]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[보이지 않는 차원, 그리고 서울 홈페이지 제작 업체 선정 시의 &#39;파라미터 맹점&#39;]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-002-1jy6djc.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/checklist-002-1jy6djc.html</guid>
+      <description><![CDATA[laptop, code editor, neovim, terminal, matrix, dark mode, server rack, glitch, cyberpunk, deep focus, (code:1.3), (server:1.2) PR 머지 직전, Q4_K_M 양자화 시 ]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[서울 홈페이지 제작 업체의 서버가 왜 30 초마다 두드러지는지, 그 마찰음을 1.29 로 귀결한 이유]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/compare-001-rbc0u8.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/compare-001-rbc0u8.html</guid>
+      <description><![CDATA[## 관찰 기록: 자정의 모니터링 화면에서 들은 소음 오전 3 시, 데이터센터의 냉각 바람 소리만이 가득한 모니터 앞에서 나는 I/O 그래프가 수직으로 솟아오르는 것을 목격했다. 클라이언트의 트래픽이 정상인데도 불구하고, 특정 마이너 버전 업데이트 이후 저장소 접근 속]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/guide-001-hjsb5n.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/guide-001-hjsb5n.html</guid>
+      <description><![CDATA[### 포스트 DNA 4023f91e #### "특정 IPS 패널 로트에서만 발생하는 백라이트 블리드 패턴 해결 가이드" 아, 진짜... 특정 메인보드 바이오스 버전에서만 가능한 비공식 전압 언락 방법과 벽돌 위험 갈등에 대해 이야기해볼게. 이 주제는 오버클럭 커뮤니티]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-002-10gmzw6.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-002-10gmzw6.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role:** Elite Critic/Fact-Force/Geek Persona (PBN Blog Writer). Confident, analytical, slightly arro]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-002-j6i2k9.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-002-j6i2k9.html</guid>
+      <description><![CDATA[### "서울 홈페이지 제작 업체 선택의 진실: 볼륨 마운트 경합 버그와 CSI 드라이버" #### 오픈소스 도구 취약점/변경점 / Redis OOM 킬 서사 ##### [冷開場]: 쿠버네티스 1.29에서 특정 CSI 드라이버와의 상호작용으로 발생한 볼륨 마운트 경합 ]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-003-kncypj.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-003-kncypj.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role:** Local Reviewer (구어체 내돈내산 톤으로 실제 경험담 같은 감정 표현을 섞어 작성하라) BUT also an [Elite] [Critic] [Fact-Fo]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[공장 도장만큼 중요한 전압 마진, 서울 홈페이지 업체 선택에서 놓치기 쉬운 미세 오차]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-003-z0ltxx.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-003-z0ltxx.html</guid>
+      <description><![CDATA[mechanical switch closeup, motherboard bios settings, overclocking profile, precision engineering, technical analysis, digital hardware, german manufa]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Created Title]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-004-14vqavr.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/interview-004-14vqavr.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role:** Elite Critic / Fact Violence Character (arrogant, logical, analytical, scores things). Also ]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-001-1b2fzwo.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-001-1b2fzwo.html</guid>
+      <description><![CDATA[### 서울 홈페이지 제작 업체 선택误区: 특수 IPS 패널 로트와 무상교체 조건 아, 진짜... 특정 IPS 패널 로트에서만 발생하는 백라이트 블리드 패턴과 제조사 무상교체 조건에 대해 알아보자. 이 질문을 헷갈릴 법한 선택 사례를 통해 본글의 메커니즘을 파헤쳐보겠다]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cloudflare 캐시 리저브의 &#39;숨은 지연 시간&#39;이 만드는 서울 홈페이지 제작 업체 평가 기준]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-001-t65977.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-001-t65977.html</guid>
+      <description><![CDATA[재무팀장님이 예약 인스턴스 구매 직전 가격 인하 공지를 놓친 날의 상황을 떠올려 보라. 시스템이 자동으로 조정해 줄 거라고 믿고 고가에 고정 계약을 맺은 그날 밤, 실제 청구서에서 예상치 못한 손실이 발생했다. 이는 Cloudflare 캐시 리저브가 특정 엣지 로케이션]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[서울 홈페이지 제작 업체에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-1bchs1q.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-1bchs1q.html</guid>
+      <description><![CDATA[제목: 창작한 제목: "CPU 크레딧 소진 전 커널 패닉의 비밀: AWS Lightsail 인스턴스 관리의 고래" ## 구조 ### cold-open-case클라우드 엣지케이스로 시작하여, 서버 리소스 관리에 대한 간단한 실수부터 시작한다. ## 주제 분석 ### 구체]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-8j4hbq.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-8j4hbq.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role/Persona:** Local Reviewer (구어체 내돈내산 톤), Elite Critic/Fact-Force Geek Operator (오버클럭 커뮤니티 운영자 시점]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[500만 단계 RoPE 설정에서 발견된 서울 업체들의 &#39;속도&#39; 저해 요인]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-tzq3r2.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-002-tzq3r2.html</guid>
+      <description><![CDATA[아, 정말... 같은 모델 세팅이 A GPU에서는 20% 성능 상승을 보여주면서 B GPU에서는 퍼플렉시티가 오히려 뿜어져 나오는 게 아니냐. Open-source 기여자로서 양자화 PR 머지 직전 이 엣지케이스를 마주했을 때의 당황스러움은 상상 이상이었다. ## 양자]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Lightsail 가 숨겨진 커널 패닉을 부른 순간, 서울의 웹 제작사는 왜 깨어났는가]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-003-16uh5wa.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/myth-003-16uh5wa.html</guid>
+      <description><![CDATA[새벽 3 시에 페이저가 울려 깨어난 순간, 그것은 단순한 알림이 아니었다. 특정 AMI 조합에서 CPU 크레딧 소진이 3 분 전으로 포착되면서 곧이어 커널 패닉이 터진 사건이었다. 이 경우의 수를 분석하지 않는다면 다음 번에는 훨씬 더 큰 다운타임으로 이어질 것이다. ]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Apache Superset 2.0 RC3 가 사라진 이유, 서울 홈페이지 제작 업체의 기술 선택 실패론]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/review-005-l2szzf.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/review-005-l2szzf.html</guid>
+      <description><![CDATA["RC3 빌드를 PyPI 에서 갑자기 지운 그 순간, 우리 팀은 밤새 로그를 따냈다." 개발자 커뮤니티의 그 날 밤이었으니, 단순한 버그 수정이 아니었다. Apache Superset 2.0 의 RC3 빌드가 공식 저장소에서 삭제된 건 PostgreSQL 실행계획 회귀]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/review-005-m7h66d.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/review-005-m7h66d.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role:** Elite Critic/Reviewer (Geek Persona, SRE Engineer perspective, slightly arrogant/confident t]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Created Title]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-004-1vad584.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-004-1vad584.html</guid>
+      <description><![CDATA[Thinking Process: 1. **Analyze the Request:** * **Role:** Elite Critic/ML Engineer Persona (Arrogant, factual, blunt, loves scoring/ranking). Mix of j]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[47 분 지연된 캐시 무효화가 부르는 S3 비용 전쟁]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-004-5v4iqz.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-004-5v4iqz.html</guid>
+      <description><![CDATA[오늘 밤 2 시, 모니터링 대시보드에서 튀어 나온 오류 로그를 보며 한숨이 났다. Cloudflare Reserve 캐시 무효화가 특정 엣지에서 예상치 못한 47 분까지 지연되는 건 단순한 설정 문제라기보다 네트워크 라우팅의 엔트로피 현상일 가능성이 높다. ## 예상치]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Lightsail CPU 크레딧 소진과 커널 패닉의 시간적 상관관계 및 예산 누수 분석]]></title>
+      <link>https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-005-xvj869.html</link>
+      <guid isPermaLink="true">https://cosmos0111-cmyk.github.io/bp-kr-pbn-bp-001/posts/t3link-005-xvj869.html</guid>
+      <description><![CDATA[시스템이 붉은색 에러 로그를 출력하기까지 남았던 시간은 정확히 3 분이었다. 재무팀장이 이틀 전 확인하지 못한 가격 인하 공지를 놓친 건 단순한 예산 초과일 뿐이 아니었다. 당연히, 그 영향은 고객에게 직접 전달되는 가용성 문제로 이어진다. 사용한 AMI 는 Ubunt]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
