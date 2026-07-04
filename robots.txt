@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kr-pbn-bp-001.node-link.shop/sitemap.xml
+Sitemap: https://seoul-site-builder.node-link.shop/sitemap.xml
