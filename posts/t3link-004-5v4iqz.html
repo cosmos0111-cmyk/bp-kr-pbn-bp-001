@@ -24,7 +24,7 @@
   <main>
     <h1>47 분 지연된 캐시 무효화가 부르는 S3 비용 전쟁</h1>
     <article>
-      <p><img src="../assets/FluxProfile_00046_.png" alt="Cloudflare Edge Cache Invalidation Delay Graph Analysis" loading="lazy" width="1344" height="768"></p>
+      <p><img src="../assets/FluxProfile_00046_.webp" alt="Cloudflare Edge Cache Invalidation Delay Graph Analysis" loading="lazy" width="1344" height="768"></p>
 <p>오늘 밤 2 시, 모니터링 대시보드에서 튀어 나온 오류 로그를 보며 한숨이 났다. Cloudflare Reserve 캐시 무효화가 특정 엣지에서 예상치 못한 47 분까지 지연되는 건 단순한 설정 문제라기보다 네트워크 라우팅의 엔트로피 현상일 가능성이 높다.</p>
 <p>## 예상치 못한 비용 폭발 원인 분석<br>DevOps 로직을 보면 오리지널 서버의 버전 관리가 엣지 캐싱과 충돌할 때 S3 버저닝 대금이 급등한다. 특히 AWS 프리티어로 시작해 트래픽이 치솟는 순간, 캐시 헤더 무효화 지연으로 인해 원본 요청이 반복되면서 비용이 기하급수적으로 증가하는 패턴을 보인다.</p>
 <p>## 서울 홈페이지 제작 업체의 숨은 리스크<br>웹 에이전시들은 이런 엣지 병목 현상을 인지하지 못한 채 Uptime 을 보장하며 클라이언트와 계약을 맺는다. 만약 캐시 무효화가 지연되면 실제 데이터는 최신인데 사용자는 구버전을 볼 수 있어 고객 신뢰도 하락과 직접적인 연결고리가 된다. 이는 특히 [서울 홈페이지 제작 업체] 들이 안정성을 강조할 때 가장 큰 리스크가 될 수 있다.</p>
