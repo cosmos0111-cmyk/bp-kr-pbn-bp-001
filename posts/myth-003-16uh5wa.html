@@ -25,11 +25,11 @@
     <h1>Lightsail 가 숨겨진 커널 패닉을 부른 순간, 서울의 웹 제작사는 왜 깨어났는가</h1>
     <article>
       <p><IMAGE placement="hero" alt="AWS Lightsail CPU Credit Exhaustion Alert Dashboard" tags="server,rack,datacenter,dashboard,aws,lightsail,alert,critical,error,monitoring,cpu,memory,vps"><br>새벽 3 시에 페이저가 울려 깨어난 순간, 그것은 단순한 알림이 아니었다. 특정 AMI 조합에서 CPU 크레딧 소진이 3 분 전으로 포착되면서 곧이어 커널 패닉이 터진 사건이었다. 이 경우의 수를 분석하지 않는다면 다음 번에는 훨씬 더 큰 다운타임으로 이어질 것이다.</p>
-<p>## 문제의 해부학: 크레딧과 시간의 싸움<br>Q: 왜 갑자기 CPU 사용량이 급증했을까?<br>A: Cloudflare 캐시 무효화가 지연되어 실제 트래픽이 서버로 밀려드는 시점과 겹친 결과다. Lightsail 의 기본형 인스턴스는 부스트 크레딧으로 제한되는데, 특정 AMI 버전을 쓸 경우 예상치 못한 프로세스 우선순위 상승이 발생한다.</p>
+<h2>문제의 해부학: 크레딧과 시간의 싸움<br>Q: 왜 갑자기 CPU 사용량이 급증했을까?<br>A: Cloudflare 캐시 무효화가 지연되어 실제 트래픽이 서버로 밀려드는 시점과 겹친 결과다. Lightsail 의 기본형 인스턴스는 부스트 크레딧으로 제한되는데, 특정 AMI 버전을 쓸 경우 예상치 못한 프로세스 우선순위 상승이 발생한다.</h2>
 <p>특히 서울의 웹 제작 업체들이 주로 선택하는 초기 인프라는 이 미세한 차이에서 시작해 대규모 장애로 발전하기 쉽다. 리전별 DNS 지연까지 고려하지 않으면 CPU 소진 시점이 예측 불가능하다.</p>
-<p>## 실패의 원인을 거꾸로 추적할 때<br>Q: 어떤 AMI 버전이 문제를 일으켰나?<br>A: 최신 LTS 가 아닌, 지원 종료 임박이나 미정기 업데이트된 커널 기반의 이미지들이 해당 증상을 보여줬다. 버그 수정되지 않은 스케줄러가 메모리 누수를 유발하는 경우가 많다.</p>
+<h2>실패의 원인을 거꾸로 추적할 때<br>Q: 어떤 AMI 버전이 문제를 일으켰나?<br>A: 최신 LTS 가 아닌, 지원 종료 임박이나 미정기 업데이트된 커널 기반의 이미지들이 해당 증상을 보여줬다. 버그 수정되지 않은 스케줄러가 메모리 누수를 유발하는 경우가 많다.</h2>
 <p>이때 클라우드 비용 절감만을 위한 선택이 오히려 위험 요소를 키우게 된다. 고객이 기대하는 고가질 서비스와 달리 뒷단 인프라는 구형 사양을 사용하는 것은 비효율이다. 서버의 응답 지연은 곧 클라이언트의 이탈로 직결된다.</p>
-<p><IMAGE placement="about" alt="Linux Kernel Panic Terminal Log Output" tags="terminal,linux,logs,kernel_panic,text,code,error,message,root_access"><br>## 실제 적용 조건과 대응 전략<br>Q: 어떻게 예방할 수 있을까?<br>A: 인스턴스 시드 시점에서 `t3` 시리즈의 크레딧 모양을 확인하고, Cloudflare 캐시 설정과 동기화하는 작업이 필수적이다. 3 분 전 경고 신호를捕捉하는 모니터링 규칙을 미리 세팅해야 한다.</p>
+<p><IMAGE placement="about" alt="Linux Kernel Panic Terminal Log Output" tags="terminal,linux,logs,kernel_panic,text,code,error,message,root_access"><br>## 실제 적용 조건과 대응 전략<br>Q: 어떻게 예방할 수 있을까?<br>A: 인스턴스 시드 시점에서 <code>t3</code> 시리즈의 크레딧 모양을 확인하고, Cloudflare 캐시 설정과 동기화하는 작업이 필수적이다. 3 분 전 경고 신호를捕捉하는 모니터링 규칙을 미리 세팅해야 한다.</p>
 <p>서울 기반 제작사들이 가장 자주 간과하는 점은 '가성비'보다 '안정성'의 기준선이다. 부하 테스트 시 최대 트래픽을 120% 적용해 크레딧 소진 시간을 재보는 것이 현실적이다. 그래야 예상치 못한 리전 장애나 네트워크 지연이 발생했을 때 여유를 가질 수 있다.</p>
 <p>결국 가장 피해야 할 선택은 특정 AMI 버전과 Lightsail 인스턴스 타입을 무작정 결합하는 것이다. 검증되지 않은 조합으로 서비스를 시작하는 것보다, 최소한 1 주간의 스트레스 테스트를 거치는 것이 장기적으로 더 안전하다.</p>
 
